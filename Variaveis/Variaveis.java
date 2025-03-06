@@ -10,13 +10,13 @@ public class Variaveis {
     // * Quando executa um programa Java, a JVM (Java Virtual Machine) procura o método main e começa a execução a partir dele.
     public static void main(String[] args) {
         
-        // VARIAVÉIS => variável é um espaço na memória do computador usado para armazenar valores que podem ser manipulados pelo programa. Cada variável tem um tipo de dado específico e um nome.
+        // ! VARIAVÉIS => variável é um espaço na memória do computador usado para armazenar valores que podem ser manipulados pelo programa. Cada variável tem um tipo de dado específico e um nome.
 
-        // 1. Declarar Variável: tipo, nome, atribuir valor;
+        //  1. Declarar Variável: tipo, nome, atribuir valor;
         int minhaIdade = 22;
         System.out.println("1: Idade: " + minhaIdade);
 
-        // 2. Posso alterar o valor da variável, mas não posso trocar seu tipo! Exemplo: int para String;
+        //  2. Posso alterar o valor da variável, mas não posso trocar seu tipo! Exemplo: int para String;
         minhaIdade = 21;
         System.out.println("2: Alterei o valor da variável. Idade:" + minhaIdade);
 

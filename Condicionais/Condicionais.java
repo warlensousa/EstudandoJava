@@ -4,16 +4,16 @@ package Condicionais;
 public class Condicionais {
     public static void main(String[] args) {
         
-        // CONDICIONAIS => são usados para executar diferentes blocos de código com base em certas condições. 
+        // ! CONDICIONAIS => são usados para executar diferentes blocos de código com base em certas condições. 
         // Tipos de condicionais: If, if-else, if-else-if, switch, operador ternário etc... (outras ainda ta em processo de estudo);
 
-        // 1. if => executa bloco de códico se a condição for verdadeira;
+        // ! 1. if => executa bloco de códico se a condição for verdadeira;
         int idade = 18;
         if(idade >= 18) {
             System.out.println("1: Maior de Idade!");
         }
 
-        // 2. if-else => executa um bloco de código se a condição for verdadeira, caso contrário, executa outro bloco de código.
+        // ! 2. if-else => executa um bloco de código se a condição for verdadeira, caso contrário, executa outro bloco de código.
         // Pode se tornar difícil de ler com muitas condições encadeadas (use o switch);
         String nome = "Warlen"; 
         String nome2 = "Lucas";
@@ -34,7 +34,7 @@ public class Condicionais {
             System.out.println("3: " + palavra + " não tem 5 ou 6 caracteres! Ela tem " + palavra.length() + " caracteres.");
         }
        
-        // 4. switch => O bloco switch é usado para selecionar um dos muitos blocos de código a serem executados.
+        // ! 4. switch => O bloco switch é usado para selecionar um dos muitos blocos de código a serem executados.
         // break => evita para parar codico na condição;
         // Não pode usar switch com tipos de dados long, float, double e boolean.
         // Não aceita tipos complexos (objetos, coleções, expressões booleanas)
@@ -71,24 +71,24 @@ public class Condicionais {
         String resultado = numero > 10 && numero < 15 ? "5: (True) Sim, ele é maior que 10 e menor que 15" : " (False) Não, ele nao é maior que 10, porém é menor que 15";
         System.out.println(resultado);
         
-        // 6. Operadores lógicos:
+        // ! 6. Operadores lógicos:
         // && => (e) ou seja, precisar ser verdadeiro as duas condições para da verdeiro (True && True = True);
         // || => (ou) precisa que apenas uma das condições seja verdadeira para da verdeiro (True || false = True);
         //. ! => negação; ou seja, se for verdadeiro ele vai virar false (!True = false);
 
 
 
-        // QUANDO USAR E QUAL A MELHOR OPÇÃO;
+        // ! QUANDO USAR E QUAL A MELHOR OPÇÃO;
 
         // !Situação	                                Melhor Escolha
-        // Comparações simples   =>	                    if-else
-        // Muitas condições fixas  =>	                switch
-        // Apenas 2 opções (simples)  =>	            Operador ternário ? :
-        // Comparações booleanas  =>	                if-else
-        // Expressões encadeadas difíceis de ler  =>	switch ou EnumMap
-        // Trabalhando com enums   =>	                EnumMap ao invés de switch
-        // Lidando com valores opcionais  =>            Optional ao invés de if-null
-        // Filtragem em listas   =>                     Stream API ao invés de if
+        // Comparações simples   =>	                    ✔ if-else
+        // Muitas condições fixas  =>	                ✔ switch
+        // Apenas 2 opções (simples)  =>	            ✔ Operador ternário ? :
+        // Comparações booleanas  =>	                ✔ if-else
+        // Expressões encadeadas difíceis de ler  =>	✔ switch ou EnumMap
+        // Trabalhando com enums   =>	                ✔ EnumMap ao invés de switch
+        // Lidando com valores opcionais  =>            ✔ Optional ao invés de if-null
+        // Filtragem em listas   =>                     ✔ Stream API ao invés de if
 
 
     }
