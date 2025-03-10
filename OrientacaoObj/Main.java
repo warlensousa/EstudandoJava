@@ -67,14 +67,21 @@ public class Main {
         Barco barquinho = new Barco();
         barquinho.navegar(); // Método sobrescrito da interface 'Navegavel';
         barquinho.ancorar();// Método proprio Default da interface 'Navegavel';
+        // ativar função veiculo da classe principal
+        operarVeiculo(barquinho);
 
         Aviao aviaozinho = new Aviao();
         aviaozinho.pilotar(); // Método sobrescrito da interface 'Pilotavel';
         Pilotavel.aterrissar();//  Método proprio Static da interface 'Pilotavel', mas chama com a classe;
+        // ativar função veiculo da classe principal
+        operarVeiculo(aviaozinho);
 
         Hidroaviao hidroAviao = new Hidroaviao();
         hidroAviao.navegar(); //Método sobrescrito da interface 'Navegavel'; que a classe Mãe implementou;
         hidroAviao.ancorar(); // metodo de interface que foi implementada pela classe mãe Barco, entao posso usar quando herdo a classe Barco;
+        // ativar função veiculo da classe principal
+        operarVeiculo(hidroAviao);
+
 
 
         // ! Classes com Final e métodos com Final;
@@ -84,12 +91,15 @@ public class Main {
         
         // Computador não pode herdar a classe Teclado porque ela é final;
 
+    }
 
-
-       
-
-
-
-
+    // Instanceof : é usado para verificar se um objeto é uma instância de uma classe específica ou implementa uma interface específica.
+    public static void operarVeiculo(Object veiculo) { // Objeto passo de parametro da função (nome ce pode colocar qualquer um);
+        if(veiculo instanceof Pilotavel) { 
+            System.out.println("Este veiculo é pilotavel");
+        }
+        if(veiculo instanceof Navegavel) {
+            System.out.println("Este veiculo é navegavel");
+        }
     }
 }
