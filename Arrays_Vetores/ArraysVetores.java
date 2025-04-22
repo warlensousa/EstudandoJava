@@ -29,7 +29,7 @@ public class ArraysVetores {
         System.out.println(Arrays.toString(nomes));
 
         // Copiar um Array, podendo ajustar seu tamanho;
-        String[] copiaArrayNomes = Arrays.copyOf(nomes, 6); // (Array que vai ser copiado, elementos que vai ser copiado) obs: se colocar mais ele mentos que o array que está sendo copiado tem... os que não tem no array original vai ter valor de 0 (int) ou null (String);
+        String[] copiaArrayNomes = Arrays.copyOf(nomes, 6); // (Array que vai ser copiado, elementos que vai ser copiado) obs: se colocar mais elementos que o array que está sendo copiado tem... os que não tem no array original vai ter valor de 0 (int) ou null (String);
         System.out.println(Arrays.toString(copiaArrayNomes));
 
 
